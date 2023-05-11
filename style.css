@@ -10,3 +10,162 @@ html {
   font-weight: 500;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 40px;
+  background-color: #f7fafd;
+}
+
+main {
+  padding: 16px;
+  max-width: 620px;
+  background-color: #ffffff;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #5e6778;
+}
+
+#section-nots-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 28px 0;
+}
+
+#section-nots-top h1 {
+  font-size: 1.2rem;
+  color: #1c202b;
+}
+
+#section-nots-top .nots-num {
+  background-color: #0a317b;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 2px 12px;
+  margin-left: 6px;
+  border-radius: 6px;
+}
+
+#section-nots-display {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.notification {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.notification img {
+  width: 40px;
+  height: 40px;
+}
+
+.notification-p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.image-embedded {
+  margin-left: auto;
+}
+
+.unread span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #f65351;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.read span {
+  display: none;
+}
+
+.read {
+  background-color: #ffffff;
+}
+
+.unread {
+  background-color: #f7fafd;
+}
+
+.name {
+  color: #1c202b;
+}
+
+.group {
+  color: #0a317b;
+}
+
+.notification .notification-time {
+  color: #939dae;
+}
+
+.message-private {
+  padding: 12px;
+  border: 1px solid #dde7ee;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+footer { 
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: #3e52a3;
+}
+
+
+@media screen and (min-width: 600px) {
+  main {
+    box-shadow: 0 12px 32px #0a317b16;
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  #section-nots-top h1 {
+    font-size: 1.4rem;
+  }
+
+  #section-nots-top .nots-num {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .mark-all:hover, strong:hover {
+    cursor: pointer;
+    color: #0a317b;
+  }
+
+  .unread:hover {
+    cursor: pointer;
+  }
+
+  .message-private:hover {
+    cursor: pointer;
+    background-color: #e5effa;
+  }
+
+  .image-embedded:hover {
+    cursor: pointer;
+    outline: 2px solid #dde7ee;
+    border-radius: 6px;
+  }
+}
